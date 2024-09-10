@@ -1,1 +1,35 @@
 @use 'partials/top-picks';
+@use 'partials/variables';
+@use 'partials/card-style';
+@use "sass:color";
+
+
+body{
+    background-color: variables.$primary;
+}
+
+.card {
+    padding: 5px;
+    margin: 5px;
+}
+
+.card__btn{
+    max-width: 100%;
+    padding: 5px 0 5px 0;
+    border: 0 solid black;
+    background-color: color.adjust(variables.$primary, $lightness: 15%);
+    color: color.complement(variables.$primary);
+
+    @include card-style.small-cap;
+
+    &:hover{
+        background-color: color.adjust(variables.$primary, $lightness: 40%);
+    }
+}
+
+.top-picks{
+    background-color: color.adjust(variables.$primary, $lightness: 5%);
+    color: color.adjust(variables.$primary, $lightness: 100%);
+
+    @include card-style.small-cap;
+}

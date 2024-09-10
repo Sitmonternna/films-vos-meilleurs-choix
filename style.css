@@ -1,0 +1,50 @@
+.top-picks {
+  position: relative;
+  padding: 50px;
+}
+.top-picks__header {
+  border-left: solid 5px #e6c3ff;
+  padding-left: 20px;
+}
+.top-picks__title {
+  margin: 0;
+  font-family: arial;
+}
+.top-picks__desc {
+  opacity: 0.7;
+}
+.top-picks__wrapper {
+  display: flex;
+  margin: 0 -5px;
+}
+
+body {
+  background-color: #e6c3ff;
+}
+
+.card {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card__btn {
+  max-width: 100%;
+  padding: 5px 0 5px 0;
+  border: 0 solid black;
+  background-color: white;
+  color: #dcffc3;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.card__btn:hover {
+  background-color: white;
+}
+
+.top-picks {
+  background-color: #f1ddff;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

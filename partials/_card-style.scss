@@ -1,0 +1,7 @@
+@use 'variables';
+
+@mixin small-cap {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
