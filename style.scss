@@ -7,7 +7,7 @@
 body{
     background-color: variables.$primary;
 }
-
+/*
 .card {
     padding: 5px;
     margin: 5px;
@@ -32,4 +32,4 @@ body{
     color: color.adjust(variables.$primary, $lightness: 100%);
 
     @include card-style.small-cap;
-}
+}*/

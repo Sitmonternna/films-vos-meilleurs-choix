@@ -5,3 +5,22 @@
     font-weight: normal;
     text-transform: uppercase;
 }
+
+.card {
+    padding: 5px;
+    margin: 5px;
+}
+
+.card__btn{
+    max-width: 100%;
+    padding: 5px 0 5px 0;
+    border: 0 solid black;
+    background-color: color.adjust(variables.$primary, $lightness: 15%);
+    color: color.complement(variables.$primary);
+
+    @include card-style.small-cap;
+
+    &:hover{
+        background-color: color.adjust(variables.$primary, $lightness: 40%);
+    }
+}

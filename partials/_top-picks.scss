@@ -1,6 +1,11 @@
 @use "variables";
 
 .top-picks { 
+  background-color: color.adjust(variables.$primary, $lightness: 5%);
+  color: color.adjust(variables.$primary, $lightness: 100%);
+
+  @include card-style.small-cap;
+
   position: relative;
   padding: 50px; 
 
@@ -23,3 +28,10 @@
     margin: 0 -5px;
   }
 }
+/*
+.top-picks{
+  background-color: color.adjust(variables.$primary, $lightness: 5%);
+  color: color.adjust(variables.$primary, $lightness: 100%);
+
+  @include card-style.small-cap;
+}*/
